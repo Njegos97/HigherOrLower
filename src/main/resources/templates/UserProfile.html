@@ -7,17 +7,21 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Static/Css/custom.css">
+    <link rel="stylesheet" href="Css/custom.css">
 
 
     <title>User Profile</title>
   </head>
   <body>
+ 
     
     <div class="gameButtons">
     <button type="button" class="btn btn-outline-success btn-lg  btn-block fixed-bottom">New Game</button>
+     
+    
     <button type="button" class="btn btn-outline-danger btn-lg btn-block ">Logout</button>
     </div>
+    <h2 style="color:white">Welcome <span th:text="${Username}" style="color: white;"></span></h2>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

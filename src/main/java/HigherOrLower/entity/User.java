@@ -14,6 +14,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class User implements UserDetails{
 	
+	private static final long serialVersionUID = 1L;
+	private long id;
 	private String username;
     private String password;
    

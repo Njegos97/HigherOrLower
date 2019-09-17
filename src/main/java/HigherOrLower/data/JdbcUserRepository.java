@@ -18,7 +18,7 @@ public class JdbcUserRepository implements UserRepository {
 	
 	@Override
 	public User findByUsername(String username) {
-		User user = jdbc.queryForObject("Select Users.user username, password from Users where username =?",
+		User user = jdbc.queryForObject("Select Users.username, password from Users where username =?",
 				this:: mapRowToUser, username);
 		return user;
 	}
