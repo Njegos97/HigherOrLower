@@ -1,4 +1,4 @@
-package HigherOrLower.entity;
+package HigherOrLower.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import HigherOrLower.data.UserRepository;
+import HigherOrLower.entity.User;
 
 @Service
 public class UserRepositoryUserDetailsService implements UserDetailsService{

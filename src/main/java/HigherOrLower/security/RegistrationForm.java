@@ -1,7 +1,8 @@
-package HigherOrLower.entity;
+package HigherOrLower.security;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import HigherOrLower.entity.User;
 import lombok.Data;
 
 @Data
