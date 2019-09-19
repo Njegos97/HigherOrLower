@@ -5,9 +5,9 @@ import lombok.Data;
 @Data
 public class Game {
 
-	private boolean GameFinished = false;;
+	private boolean gameFinished = false;;
 	private int number;
-	private int playersGuess;
+	private int rolledNumber;
 //	private Guess guess;
 	
 	
@@ -35,27 +35,27 @@ public class Game {
 //	}
 
 	public boolean isNumberHigher() {
-		setPlayersGuess(generateRandomNumber());
+		setRolledNumber(generateRandomNumber());
 		
-		if(this.number > playersGuess) {
+		if(this.number > rolledNumber) {
 			setGameFinished(true);
-			setNumber(playersGuess);
+			setNumber(rolledNumber);
 			return false;
 		}
-		setNumber(playersGuess);
+		setNumber(rolledNumber);
 		return true;
 	}
 	
 	public boolean isNumberLower() {
-		setPlayersGuess(generateRandomNumber());
+		setRolledNumber(generateRandomNumber());
 		
-		if(this.number < playersGuess) {
+		if(this.number < rolledNumber) {
 			setGameFinished(true);
-			setNumber(playersGuess);
+			setNumber(rolledNumber);
 			return false;
 		}
 		
-		setNumber(playersGuess);
+		setNumber(rolledNumber);
 		return true;
 	}
 	
