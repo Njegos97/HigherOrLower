@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override 
 	protected void configure(HttpSecurity http) throws Exception{
-		http.authorizeRequests().antMatchers("/UserProfile").access("hasRole('ROLE_USER')").antMatchers("/", "/**")
+		http.authorizeRequests().antMatchers("/UserProfile", "/game/show").access("hasRole('ROLE_USER')").antMatchers("/", "/**")
 		.access("permitAll").and().formLogin().loginPage("/login").defaultSuccessUrl("/UserProfile").and().
 		logout().logoutSuccessUrl("/");
 		
