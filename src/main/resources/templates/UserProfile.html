@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,15 +14,18 @@
     <title>User Profile</title>
   </head>
   <body>
+  
+  
  
     
     <div class="gameButtons">
-    <button type="button" class="btn btn-outline-success btn-lg  btn-block fixed-bottom">New Game</button>
+    <a th:href="@{/game}" type="button" class="btn btn-outline-success btn-lg  btn-block fixed-bottom">New Game</a>
      
     
-    <button type="button" class="btn btn-outline-danger btn-lg btn-block ">Logout</button>
+    <a th:href="@{/logout}" type="button" class="btn btn-outline-danger btn-lg btn-block ">Logout</a>
     </div>
-    <h2 style="color:white">Welcome <span th:text="${Username}" style="color: white;"></span></h2>
+    <h2 style="color:white;">Welcome <span th:text="${Username}" style="color: white;"></span></h2>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

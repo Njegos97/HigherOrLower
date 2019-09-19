@@ -14,6 +14,8 @@ xmlns:th="http://www.thymeleaf.org">
     <title>Registration</title>
   </head>
   <body>
+  <a th:href="@{/}" type="button" class="btn btn-outline-danger mt-3">Home Page</a>
+  
     <div class="container d-flex justify-content-center"  style="padding: 200px;">
   <div class="w-50 p-3 rounded" style="background-color: #eee;">
     <form method="post" th:action="@{/registration}">
@@ -26,7 +28,7 @@ xmlns:th="http://www.thymeleaf.org">
     <label for="Password">Password</label>
     <input type="password" class="form-control" name= "password" id="Password" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-danger">Registration</button>
+  <button type="submit" class="btn btn-danger">Register</button>
 </form>
 </div>
 </div>
