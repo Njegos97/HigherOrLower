@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,25 +8,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Static/Css/custom.css"> 
+    <link rel="stylesheet" href="Css/custom.css"> 
 
 
     <title>Login</title>
   </head>
   <body>
-  
+  <a th:href="@{/}" type="button" class="btn btn-outline-success mt-3">Home Page</a>
   
   <div class="container d-flex justify-content-center"  style="padding: 200px;">
   <div class="w-50 p-3 rounded" style="background-color: #eee;">
-    <form>
+    <form method="post" th:action="@{/login}">
   <div class="form-group">
     <label for="Username">Username</label>
-    <input type="text" class="form-control" id="Username" placeholder="Username">
+    <input type="text" class="form-control" name="username" id="Username" placeholder="Username">
    
   </div>
   <div class="form-group">
     <label for="Password">Password</label>
-    <input type="password" class="form-control" id="Password" placeholder="Password">
+    <input type="password" class="form-control" name="password" id="Password" placeholder="Password">
   </div>
   <button type="submit" class="btn btn-success">Login</button>
 </form>

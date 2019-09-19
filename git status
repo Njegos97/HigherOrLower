@@ -1,0 +1,71 @@
+[33mcommit 887966fde412f87ccb41a5d69d59cc95e91591a9[m[33m ([m[1;36mHEAD -> [m[1;32mwork4[m[33m, [m[1;31morigin/dev[m[33m, [m[1;32mdev[m[33m)[m
+Merge: c61a9c3 4c39143
+Author: Njegos97 <njegoss997@gmail.com>
+Date:   Tue Sep 17 14:16:03 2019 +0200
+
+    Merge pull request #4 from Njegos97/work3
+    
+    Created Profile Controller, Registration Controller, ViewConfigContro…
+
+[33mcommit 4c39143f6616954978156f3b68b690bc3d9231af[m[33m ([m[1;31morigin/work3[m[33m)[m
+Author: njegoss997@gmail.com <njegoss997@gmail.com>
+Date:   Tue Sep 17 14:13:45 2019 +0200
+
+    Created Profile Controller, Registration Controller, ViewConfigController
+
+[33mcommit c61a9c3d23e6c92273c5bf53fb2464a6dcb89ab3[m
+Merge: bfef607 72b5dda
+Author: Njegos97 <njegoss997@gmail.com>
+Date:   Tue Sep 17 11:52:53 2019 +0200
+
+    Merge pull request #3 from Njegos97/work2
+    
+    Work2
+
+[33mcommit 72b5dda40c0d144e56f51d3543758e454d9cd94f[m[33m ([m[1;31morigin/work2[m[33m)[m
+Author: njegoss997@gmail.com <njegoss997@gmail.com>
+Date:   Tue Sep 17 11:49:11 2019 +0200
+
+    Created SecurityConfig class and implement configuration methods
+
+[33mcommit 81d47d83a428eeabf4a8c2f3458134eed8a3ee42[m
+Author: njegoss997@gmail.com <njegoss997@gmail.com>
+Date:   Tue Sep 17 11:27:39 2019 +0200
+
+    Implement RegistrationForm class and implement UserRepositoryUserDetailsService
+
+[33mcommit bfef6076147df944b7670a6fa95aa9c1dfd4203c[m
+Merge: ed4355d 78a6614
+Author: Njegos97 <njegoss997@gmail.com>
+Date:   Tue Sep 17 10:59:04 2019 +0200
+
+    Merge pull request #2 from Njegos97/work1
+    
+    Created schema.sql with tabel Users, created UserRepository interface…
+
+[33mcommit 78a6614575920f01e1c67a0831cb42cac97129bf[m[33m ([m[1;31morigin/work1[m[33m)[m
+Author: njegoss997@gmail.com <njegoss997@gmail.com>
+Date:   Tue Sep 17 10:54:14 2019 +0200
+
+    Created schema.sql with tabel Users, created UserRepository interface with findByUsername() and save() methods, and Created JdbcUserRepository that implements UserRepository interface
+
+[33mcommit ed4355d092c75496bc610dfd494863aa62fdc800[m
+Merge: ac5aaee c70dd9e
+Author: Njegos97 <njegoss997@gmail.com>
+Date:   Tue Sep 17 10:03:35 2019 +0200
+
+    Merge pull request #1 from Njegos97/work
+    
+    Created User class that implements UserDetails
+
+[33mcommit c70dd9ef822aa42c96812993ed4b815274eb9722[m[33m ([m[1;31morigin/work[m[33m)[m
+Author: njegoss997@gmail.com <njegoss997@gmail.com>
+Date:   Tue Sep 17 10:01:05 2019 +0200
+
+    Created User class that implements UserDetails
+
+[33mcommit ac5aaee69f3df1291d8d92dd6ccff34ea7682c95[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: njegoss997@gmail.com <njegoss997@gmail.com>
+Date:   Tue Sep 17 09:38:33 2019 +0200
+
+    first commit
