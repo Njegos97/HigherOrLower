@@ -30,20 +30,16 @@ public class GameController {
 	
 	@PostMapping("/lower")
 	public String lowerNumber(@ModelAttribute("game") Game game) {
-	   if(game.isNumberLower() == true) {
-		   return"redirect:/game/show";
-	   }
+	   game.isNumberLower();
 		
 	   return"redirect:/game/show";
 	}
 	
 	@PostMapping("/higher")
 	public String higherNumber(@ModelAttribute("game") Game game) {
-		 if(game.isNumberHigher() == true) {
-			   return"redirect:/game/show";
-		   }
+		 game.isNumberHigher();
 			
-		   return"redirect:/game/show";
+		 return"redirect:/game/show";
 	
 	}
 	
